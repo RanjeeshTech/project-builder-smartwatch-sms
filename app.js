@@ -45,7 +45,7 @@ icons.forEach(icon => {
 })
 
 function openMessage(e){
-    if(e.target.classList.contains("class")&&e.target.classList.contains("msg")) return;
+    if(!e.target.classList.contains("class")&&!e.target.classList.contains("msg")) return;
     main.innerHTML = `
     <div class="message-content">
         <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quos ab fugiat nesciunt minus.</span>
